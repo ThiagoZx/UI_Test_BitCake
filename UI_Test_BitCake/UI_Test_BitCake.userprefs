@@ -1,8 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ButtonBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Sidebar\ButtonBehaviour_Rambo.cs">
     <Files>
-      <File FileName="Assets\Scripts\ButtonBehaviour.cs" Line="11" Column="2" />
+      <File FileName="Assets\Scripts\ButtonBehaviour.cs" Line="25" Column="4" />
+      <File FileName="Assets\Scripts\Sidebar\ButtonBehaviour_Ninja.cs" Line="22" Column="14" />
+      <File FileName="Assets\Scripts\Sidebar\ButtonBehaviour_Pirate.cs" Line="23" Column="13" />
+      <File FileName="Assets\Scripts\Sidebar\ButtonBehaviour_Rambo.cs" Line="21" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

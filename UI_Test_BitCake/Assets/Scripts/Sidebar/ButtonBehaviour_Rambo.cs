@@ -18,7 +18,7 @@ public class ButtonBehaviour_Rambo : ButtonBehaviour {
 
 	public void setRamboList(){
 
-		//resetSlotsImage ();
+		resetSlots ();
 
 		for (int i = 0; i < itemName.Count; i++) {
 			setCardItem (i, ownedItem [i], foilItem [i], itemName [i], spriteName [i]);

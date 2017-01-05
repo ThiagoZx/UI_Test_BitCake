@@ -19,7 +19,7 @@ public class ButtonBehaviour_Ninja : ButtonBehaviour {
 
 	public void setNinjaList(){
 
-		//resetSlotsImage ();
+		resetSlots ();
 
 		for (int i = 0; i < itemName.Count; i++) {
 			setCardItem (i, ownedItem [i], foilItem [i], itemName [i], spriteName [i]);

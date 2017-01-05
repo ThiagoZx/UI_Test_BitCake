@@ -8,12 +8,11 @@ public abstract class ButtonBehaviour : MonoBehaviour {
 	protected GameObject[] texts ;
 	protected GameObject[] cards ;
 
-	void Start() {
+	public void setCardItem (int slot, bool owned, bool foil, string name, string itemName){
+
 		texts = GameObject.FindGameObjectsWithTag ("Text");
 		cards = GameObject.FindGameObjectsWithTag ("Cards");
-	}
 
-	public void setCardItem (int slot, bool owned, bool foil, string name, string itemName){
 		Text[] currentSlotText = texts [slot].GetComponentsInChildren<Text> ();
 		Image[] currentSlotImage = cards [slot].GetComponentsInChildren<Image> ();
 
@@ -53,13 +52,24 @@ public abstract class ButtonBehaviour : MonoBehaviour {
 		}
 	}
 
-	public void resetSlotsImage(){
+	public void resetSlots(){
+	
+		cards = GameObject.FindGameObjectsWithTag ("Cards");
+		texts = GameObject.FindGameObjectsWithTag ("Text");
+
 		for (int i = 0; i < 6; i++) {
-			Image[] currentSlot = cards [i].GetComponentsInChildren<Image> ();
-			currentSlot [0].sprite = null;
-			currentSlot [0].color = new Color(1,1,1,0);
-			currentSlot [1].sprite = null;
-			currentSlot [1].color = new Color(1,1,1,0);
+
+			Image[] currentSlotImage = cards [i].GetComponentsInChildren<Image> ();
+
+			currentSlotImage [0].sprite = null;
+			currentSlotImage [0].color = new Color(1,1,1,0);
+			currentSlotImage [1].sprite = null;
+			currentSlotImage [1].color = new Color(1,1,1,0);
+
+			Text[] currentSlotText = texts[i].GetComponentsInChildren<Text> ();
+
+			currentSlotText [0].text = "";
+			currentSlotText [1].text = "";
 		}
 	}
 }

@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ButtonBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Sidebar\ButtonBehaviour_Ninja.cs" />
+     <Compile Include="Assets\Scripts\Sidebar\ButtonBehaviour_Pirate.cs" />
+     <Compile Include="Assets\Scripts\Sidebar\ButtonBehaviour_Rambo.cs" />
      <None Include="Assets\Fonts\Exo\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
